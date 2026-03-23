@@ -7,11 +7,11 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0B2C2A; /* Dark green background */
+      background-color: #0B2C2A; /* Dark green */
       color: #FFFFFF;
     }
 
-    /* Navigation Bar */
+    /* Top Navigation */
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -20,7 +20,6 @@
       padding: 1rem;
       border-radius: 0 0 20px 20px;
     }
-
     .navbar ul {
       list-style: none;
       display: flex;
@@ -28,19 +27,14 @@
       margin: 0;
       padding: 0;
     }
-
-    .navbar li {
-      cursor: pointer;
-    }
-
+    .navbar li { cursor: pointer; }
     .navbar input {
       padding: 0.5rem;
       border-radius: 10px;
       border: none;
     }
-
     .cta {
-      background-color: #3FD5C0; /* Bright aqua */
+      background-color: #3FD5C0;
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 20px;
@@ -49,16 +43,23 @@
       font-weight: bold;
     }
 
-    /* Sections */
-    .hero, .content, .gallery {
+    /* Section Styling */
+    section {
       padding: 2rem;
     }
-
     .card {
       background-color: #1C7C73;
       padding: 1rem;
       border-radius: 20px;
       margin-top: 1rem;
+    }
+
+    /* Scroll Indicator */
+    .scroll-indicator {
+      text-align: center;
+      margin: 1rem 0;
+      color: #3FD5C0;
+      font-weight: bold;
     }
 
     /* Gallery */
@@ -67,7 +68,6 @@
       gap: 1rem;
       margin-top: 1rem;
     }
-
     .gallery-item {
       background-color: #3FD5C0;
       padding: 1rem;
@@ -104,26 +104,28 @@
   </nav>
 
   <!-- Main Section -->
-  <section class="hero">
+  <section>
     <h1>Understanding Outer Space</h1>
     <div class="card">
       <h2>What is Space?</h2>
       <p>Space is the vacuum beyond Earth's atmosphere, filled with planets, stars, satellites, nebulae, galaxies, asteroids, meteoroids, comets, and cosmic dust.</p>
     </div>
+    <div class="scroll-indicator">SCROLL ↓</div>
   </section>
 
   <!-- Differences Section -->
-  <section class="content">
+  <section>
     <h2>Difference: Space vs Galaxy</h2>
-    <p>Unlike space itself, a galaxy is a massive collection of stars, gas, and dust bound by gravity. Galaxies come in many shapes: elliptical, lenticular, spiral, dwarf, and irregular.</p>
+    <p>A galaxy is a massive collection of stars, gas, and dust bound by gravity. Galaxies come in many shapes: elliptical, lenticular, spiral, dwarf, and irregular.</p>
     <div class="card">
       <h3>Green Pea Galaxy</h3>
       <p>This rare galaxy type was discovered in 2007 during the Sloan Digital Sky Survey. It appears small and bright green in survey images, hence the name “Green Pea.”</p>
     </div>
+    <button class="cta">Next</button>
   </section>
 
   <!-- Gallery -->
-  <section class="gallery">
+  <section>
     <h2>Gallery</h2>
     <div class="gallery-grid">
       <div class="gallery-item">Galaxy</div>
