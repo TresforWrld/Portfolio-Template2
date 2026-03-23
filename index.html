@@ -1,9 +1,92 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Antariksa</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Antariksa Space Exploration</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0B2C2A; /* Dark green background */
+      color: #FFFFFF;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1C7C73; /* Teal */
+      padding: 1rem;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      cursor: pointer;
+    }
+
+    .navbar input {
+      padding: 0.5rem;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .cta {
+      background-color: #3FD5C0; /* Bright aqua */
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      color: #0B2C2A;
+      font-weight: bold;
+    }
+
+    /* Sections */
+    .hero, .content, .gallery {
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: #1C7C73;
+      padding: 1rem;
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery-item {
+      background-color: #3FD5C0;
+      padding: 1rem;
+      border-radius: 20px;
+      flex: 1;
+      text-align: center;
+      color: #0B2C2A;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1C7C73;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 20px 20px 0 0;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <!-- Top Navigation -->
@@ -22,20 +105,20 @@
 
   <!-- Main Section -->
   <section class="hero">
-    <h1>Mengenal Apa Itu Antariksa / Luar Angkasa</h1>
+    <h1>Understanding Outer Space</h1>
     <div class="card">
-      <h2>Apa itu Antariksa?</h2>
-      <p>Antariksa adalah ruang hampa di luar atmosfer bumi...</p>
+      <h2>What is Space?</h2>
+      <p>Space is the vacuum beyond Earth's atmosphere, filled with planets, stars, satellites, nebulae, galaxies, asteroids, meteoroids, comets, and cosmic dust.</p>
     </div>
   </section>
 
   <!-- Differences Section -->
   <section class="content">
-    <h2>Perbedaan</h2>
-    <p>Berbeda dengan Antariksa, Galaksi adalah kumpulan besar bintang...</p>
+    <h2>Difference: Space vs Galaxy</h2>
+    <p>Unlike space itself, a galaxy is a massive collection of stars, gas, and dust bound by gravity. Galaxies come in many shapes: elliptical, lenticular, spiral, dwarf, and irregular.</p>
     <div class="card">
       <h3>Green Pea Galaxy</h3>
-      <p>Jenis galaksi langka ditemukan pada tahun 2007...</p>
+      <p>This rare galaxy type was discovered in 2007 during the Sloan Digital Sky Survey. It appears small and bright green in survey images, hence the name “Green Pea.”</p>
     </div>
   </section>
 
@@ -50,7 +133,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>Special Collaboration | Tentang Antariksa</p>
+    <p>Special Collaboration | About Space</p>
   </footer>
 </body>
-  </html>
+</html>
